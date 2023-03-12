@@ -2,6 +2,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MaxWealth",
+            "request": "launch",
+            "mainClass": "LinearSearch.MaxWealth",
+            "projectName": "DSAjava_9612ff02"
+        },
+        {
+            "type": "java",
+            "name": "EvenDigits",
+            "request": "launch",
+            "mainClass": "LinearSearch.EvenDigits",
+            "projectName": "DSAjava_9612ff02"
+        },
+        {
+            "type": "java",
+            "name": "SearchIn2dArray",
+            "request": "launch",
+            "mainClass": "LinearSearch.SearchIn2dArray",
+            "projectName": "DSAjava_9612ff02"
+        },
+        {
+            "type": "java",
+            "name": "FindMin",
+            "request": "launch",
+            "mainClass": "LinearSearch.FindMin",
+            "projectName": "DSAjava_9612ff02"
+        },
+        {
+            "type": "java",
+            "name": "SearchInRange",
+            "request": "launch",
+            "mainClass": "LinearSearch.SearchInRange",
+            "projectName": "DSAjava_9612ff02"
+        },
+        {
+            "type": "java",
             "name": "SearchInStrings",
             "request": "launch",
             "mainClass": "LinearSearch.SearchInStrings",
