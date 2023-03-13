@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "BinarySearch.Main",
+            "projectName": "DSAjava_9612ff02"
+        },
+        {
+            "type": "java",
+            "name": "test",
+            "request": "launch",
+            "mainClass": "test",
+            "projectName": "DSAjava_9612ff02"
+        },
+        {
+            "type": "java",
             "name": "MaxWealth",
             "request": "launch",
             "mainClass": "LinearSearch.MaxWealth",
