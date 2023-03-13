@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "OrderAgnosticBS",
+            "request": "launch",
+            "mainClass": "BinarySearch.OrderAgnosticBS",
+            "projectName": "DSAjava_9612ff02"
+        },
+        {
+            "type": "java",
             "name": "Main",
             "request": "launch",
             "mainClass": "BinarySearch.Main",
