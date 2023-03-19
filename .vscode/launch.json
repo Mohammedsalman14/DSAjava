@@ -2,6 +2,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "test",
+            "request": "launch",
+            "mainClass": "test",
+            "projectName": "DSAjava_e9d26991"
+        },
+        {
+            "type": "java",
+            "name": "FirstAndLastPosition",
+            "request": "launch",
+            "mainClass": "BinarySearch.FirstAndLastPosition",
+            "projectName": "DSAjava_e9d26991"
+        },
+        {
+            "type": "java",
+            "name": "SmallestLetter",
+            "request": "launch",
+            "mainClass": "BinarySearch.SmallestLetter",
+            "projectName": "DSAjava_e9d26991"
+        },
+        {
+            "type": "java",
+            "name": "Ceiling",
+            "request": "launch",
+            "mainClass": "BinarySearch.Ceiling",
+            "projectName": "DSAjava_e9d26991"
+        },
+        {
+            "type": "java",
+            "name": "Floor",
+            "request": "launch",
+            "mainClass": "BinarySearch.Floor",
+            "projectName": "DSAjava_e9d26991"
+        },
+        {
+            "type": "java",
             "name": "OrderAgnosticBS",
             "request": "launch",
             "mainClass": "BinarySearch.OrderAgnosticBS",
