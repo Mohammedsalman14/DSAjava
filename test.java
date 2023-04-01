@@ -1,71 +1,113 @@
-import java.util.Arrays;
-
+/**
+ * test
+ */
 public class test {
-    public static void main(String[] args) {
-        // int[] nums = { 12, 34, 7896 };
-        // System.out.println(findodd(nums));
-        int[] nums = { 5, 7, 7, 8, 8, 10 };
-        int[] ans = SearchRange(nums, 7);
-        System.out.println(Arrays.toString(ans));
 
+    public static void main(String[] args) {
+        int arr[] = { 12, 23, 34, 43, 54, 75 };
+      
+       
+        System.out.println(ans(arr));
+
+        // System.out.println(mainans2(arr, 34));
     }
 
-    static int findodd(int[] nums) {
+    static int mainans(int[] arr) {
         int count = 0;
-        for (int num : nums) {
-            if (odd(num)) {
+        for (int num : arr) {
+            if (even(num)) {
                 count++;
             }
         }
         return count;
     }
 
-    static boolean odd(int num) {
+    static boolean even(int num) {
         int numberofdigits = digits(num);
-        return numberofdigits % 2 == 1;
+        return numberofdigits % 2 == 0;
     }
 
-    static int digits(int num) {
+    static int digits(int nums) {
         int count = 0;
-        while (num > 0) {
+        while (nums > 0) {
             count++;
-            num = num / 10;
+            nums = nums / 10;
+        }
+        return count;
+
+    }
+
+    static int mainans2(int[] arr, int target) {
+        int start = 0;
+        int end = 1;
+        while (target > arr[end]) {
+            int newstart = end + 1;
+            end = end + (end - start + 1) * 2;
+            start = newstart;
+        }
+        return binarysearch(arr, target, start, end);
+    }
+
+    static int binarysearch(int[] arr, int target, int start, int end) {
+        while (start <= end) {
+            int mid = start + (end - start) / 2;
+            if (target > arr[mid]) {
+                start = mid + 1;
+            } else if (target < arr[mid]) {
+                end = mid - 1;
+            } else {
+                return mid;
+            }
+        }
+        return -1;
+    }
+
+    static int infiniteArray(int arr[], int target, int start, int end) {
+        while (start <= end) {
+            int mid = start + (end - start) / 2;
+            if (target == arr[mid]) {
+                return mid;
+            }
+            if (target > arr[mid]) {
+                start = mid + 1;
+            } else if (target < arr[mid]) {
+                end = mid - 1;
+            }
+        }
+        return -1;
+
+    }
+    static int ans(int arr[],int target){
+        int start=0;
+        int end=1;
+        while(target>arr[end]){
+            int newstart=end-1;
+            end=end+(end-start+1)*2;
+            start=newstart;
+        }
+        return infiniteArray(arr, target, start, end);
+    }
+    static boolean even2(int num){
+        int digits=noofdigits(num);
+        return digits%2==0;
+
+    }
+    static int noofdigits(int num){
+        int count=0;
+        while(num>0){
+            count++;
+            num=num/10;
         }
         return count;
     }
+    static int ans(int[] arr){
+        int count=0;
+        for (int i = 0; i < arr.length; i++) {
+            if(even2(arr[i])){
+                count++;
 
-    static int[] SearchRange(int[] nums, int target) {
-        int[] ans = { -1, -1 };
-        int start = search(nums, target, true);
-        int end = search(nums, target, false);
-        ans[0] = start;
-        ans[1] = end;
-        return ans;
-    }
-
-    static int search(int[] nums, int target, boolean findstartindex) {
-        int ans = -1;
-        int start = 0;
-        int end = nums.length - 1;
-        while (start <= end) {
-
-            int mid = start + (end - start) / 2;
-
-            if (target > nums[mid]) {
-                start = mid + 1;
-            } else if (target < nums[mid]) {
-                end = mid - 1;
-            } else {
-                ans = mid;
-                if (findstartindex == true) {
-                    end = mid - 1;
-                } else {
-                    start = mid + 1;
-                }
             }
-
         }
-        return ans;
+        return count;
     }
-
 }

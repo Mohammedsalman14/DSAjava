@@ -2,6 +2,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "SearchInMoutain",
+            "request": "launch",
+            "mainClass": "BinarySearch.SearchInMoutain",
+            "projectName": "DSAjava_e9d26991"
+        },
+        {
+            "type": "java",
+            "name": "PeakMoutain",
+            "request": "launch",
+            "mainClass": "BinarySearch.PeakMoutain",
+            "projectName": "DSAjava_e9d26991"
+        },
+        {
+            "type": "java",
+            "name": "InfiniteArray",
+            "request": "launch",
+            "mainClass": "BinarySearch.InfiniteArray",
+            "projectName": "DSAjava_e9d26991"
+        },
+        {
+            "type": "java",
             "name": "test",
             "request": "launch",
             "mainClass": "test",
