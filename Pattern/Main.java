@@ -7,6 +7,10 @@ public class Main {
         Pattern2(5);
         System.out.println();
         Pattern3(5);
+        System.out.println();
+        Pattern4(5);
+        System.out.println();
+        Pattern5(5);
 
     }
 
@@ -35,6 +39,26 @@ public class Main {
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= i; j++) {
                 System.out.print(j + " ");
+            }
+            System.out.println();
+        }
+    }
+    static void Pattern4(int n){
+        for (int i = 0; i <2*n; i++) {
+            int totalColInRows=i>n?2*n-i:i;
+            for (int j = 0; j <totalColInRows; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+    static void Pattern5(int n){
+        for (int i = 0; i <=n; i++) {
+            for (int space = 0; space < n-i; space++) {
+                System.out.print(" ");
+            }
+            for (int j = 0; j < i; j++) {
+                System.out.print("*");
             }
             System.out.println();
         }
