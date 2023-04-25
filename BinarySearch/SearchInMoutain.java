@@ -10,6 +10,9 @@ public class SearchInMoutain {
     public static void main(String[] args) {
         int arr[] = { 1, 2, 3, 4, 2,1,4 };
         System.out.println(search(arr,1));
+        
+
+        
     }
 
     static int search(int[] arr, int target) {
@@ -32,7 +35,7 @@ public class SearchInMoutain {
                 start = mid + 1;
             }
         }
-        return end;
+        return start;
     }
 
     static int OrderAgnosticBS(int[] arr, int target, int start, int end) {

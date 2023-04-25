@@ -2,6 +2,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "BinarySearch2dArray.Main",
+            "projectName": "DSAjava_e9d26991"
+        },
+        {
+            "type": "java",
+            "name": "test",
+            "request": "launch",
+            "mainClass": "Pattern.test",
+            "projectName": "DSAjava_e9d26991"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Pattern.Main",
+            "projectName": "DSAjava_e9d26991"
+        },
+        {
+            "type": "java",
+            "name": "SearchinRoatedArray",
+            "request": "launch",
+            "mainClass": "BinarySearch.SearchinRoatedArray",
+            "projectName": "DSAjava_e9d26991"
+        },
+        {
+            "type": "java",
             "name": "SearchInMoutain",
             "request": "launch",
             "mainClass": "BinarySearch.SearchInMoutain",

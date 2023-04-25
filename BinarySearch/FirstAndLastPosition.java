@@ -1,11 +1,14 @@
 package BinarySearch;
 
+import java.util.Arrays;
 
 public class FirstAndLastPosition {
     public static void main(String[] args) {
-        int[] nums={5,7,7,8,8,10};
-        int[]ans=SearchRange(nums, 7);
-        System.out.println(ans);
+        int[] nums={5,7,7,8,8,10,12,12};
+        // int[]ans=SearchRange(nums, 7);
+        // System.out.println(ans);
+        System.out.println(Arrays.toString(SearchRange(nums, 12)));
+        
     }
 
     static int[] SearchRange(int[] nums, int target) {
@@ -21,9 +24,9 @@ public class FirstAndLastPosition {
         int ans = -1;
         int start = 0;
         int end = nums.length - 1;
-        while (start <= end) {
+        while (start <=end) {
 
-            int mid = start + end / 2;
+            int mid = start+(end-start)/2;
 
             if (nums[mid] > target) {
                 end = mid - 1;
